@@ -1,25 +1,74 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useContext, useEffect } from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
+import Home from "./components/layout/home";
+import Products from "./components/layout/Products";
+import Header from "./components/layout/Header";
+import ProductsDetails from "./components/layout/ProductsDetails";
+import LogIn from "./components/layout/LogIn";
+import ShoppingContext from "./components/shopping/shoppingContext";
+import { auth } from "./firebase";
+import NotFound from "./components/layout/NotFound";
+import Checkout from "./components/layout/Checkout";
+import Payment from "./components/layout/Payment.js";
 
-function App() {
+
+
+const promise = loadStripe(
+  "pk_test_51OmD6lDqA54xyzpohuHe5JIQbXFeeyrFnfJnUQkXDf3r6BcMX0yPrO88Tyl3VwAPhUot9J4LouxWZrnRUN3zuRZi00WVeCzX2p"
+);
+const App = () => {
+  const shoppingContext = useContext(ShoppingContext);
+  const { setUser } = shoppingContext;
+
+  useEffect(() => {
+    auth.onAuthStateChanged((authUser) => {
+      console.log(authUser);
+      if (authUser) {
+        setUser({ user: authUser });
+      } else {
+        setUser();
+      }
+    });
+  }, [setUser]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <main>
+        <Switch>
+          <Route path="/" exact>
+            <Redirect to="/home" />
+          </Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/Products" exact>
+            <Products />
+          </Route>
+          <Route path="/Products/:id">
+            <ProductsDetails />
+          </Route>
+          <Route path="/Checkout">
+            <Checkout />
+          </Route>
+          <Route path="/Payment">
+            <Elements stripe={promise}>
+              <Payment />
+            </Elements>
+          </Route>
+          <Route path="/LogIn">
+            <LogIn />
+          </Route>
+          <Route path="*">
+            <NotFound />
+          </Route>
+        </Switch>
+      </main>
+    </>
   );
-}
+};
 
 export default App;

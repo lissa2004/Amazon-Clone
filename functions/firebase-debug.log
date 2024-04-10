@@ -1,0 +1,269 @@
+[debug] [2024-02-21T15:03:36.781Z] ----------------------------------------------------------------------
+[debug] [2024-02-21T15:03:36.796Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\treas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-02-21T15:03:36.797Z] CLI Version:   13.2.1
+[debug] [2024-02-21T15:03:36.798Z] Platform:      win32
+[debug] [2024-02-21T15:03:36.879Z] Node Version:  v20.11.0
+[debug] [2024-02-21T15:03:36.879Z] Time:          Wed Feb 21 2024 17:03:36 GMT+0200 (South Africa Standard Time)
+[debug] [2024-02-21T15:03:36.879Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-21T15:03:37.444Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-21T15:03:37.446Z] > authorizing via signed-in user (mathikgek21@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2024-02-21T15:03:37.525Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-21T15:03:37.526Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-02-21T15:03:37.573Z] [hub] writing locator at C:\Users\treas\AppData\Local\Temp\hub-clone-225dc.json
+[debug] [2024-02-21T15:03:37.657Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-21T15:03:37.657Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-21T15:03:37.658Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2024-02-21T15:03:37.678Z] defaultcredentials: writing to file C:\Users\treas\AppData\Roaming\firebase\mathikgek21_gmail_com_application_default_credentials.json
+[debug] [2024-02-21T15:03:37.699Z] Setting GAC to C:\Users\treas\AppData\Roaming\firebase\mathikgek21_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\treas\\AppData\\Roaming\\firebase\\mathikgek21_gmail_com_application_default_credentials.json"}}
+[debug] [2024-02-21T15:03:37.726Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-225dc/adminSdkConfig [none]
+[debug] [2024-02-21T15:03:38.525Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-225dc/adminSdkConfig 200
+[debug] [2024-02-21T15:03:38.526Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-225dc/adminSdkConfig {"projectId":"clone-225dc","storageBucket":"clone-225dc.appspot.com"}
+[info] i  ui: downloading ui-v1.11.7.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.7.zip..."}}
+[debug] [2024-02-21T15:03:38.608Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 
+[debug] [2024-02-21T15:03:39.326Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip 200
+[debug] [2024-02-21T15:03:39.327Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.7.zip [stream]
+[debug] [2024-02-21T15:03:47.730Z] Data is 3064105
+[debug] [2024-02-21T15:03:47.731Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-02-21T15:03:47.732Z] [unzip] Processing entry: client\
+[debug] [2024-02-21T15:03:47.732Z] [unzip] mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\
+[debug] [2024-02-21T15:03:47.899Z] [unzip] Entry: client/favicon.ico (compressed_size=2497 bytes, uncompressed_size=7406 bytes)
+[debug] [2024-02-21T15:03:47.904Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2024-02-21T15:03:47.905Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-21T15:03:47.914Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\favicon.ico
+[debug] [2024-02-21T15:03:47.978Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=7231 bytes, uncompressed_size=7367 bytes)
+[debug] [2024-02-21T15:03:47.978Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2024-02-21T15:03:47.979Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-21T15:03:47.987Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\apple-touch-icon.png
+[debug] [2024-02-21T15:03:48.003Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=16987 bytes, uncompressed_size=18186 bytes)
+[debug] [2024-02-21T15:03:48.004Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2024-02-21T15:03:48.005Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-21T15:03:48.019Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-512x512.png
+[debug] [2024-02-21T15:03:48.051Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-02-21T15:03:48.052Z] [unzip] Processing entry: client\assets\
+[debug] [2024-02-21T15:03:48.052Z] [unzip] mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\
+[debug] [2024-02-21T15:03:48.100Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-02-21T15:03:48.100Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2024-02-21T15:03:48.101Z] [unzip] mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\
+[debug] [2024-02-21T15:03:48.104Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2024-02-21T15:03:48.104Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2024-02-21T15:03:48.104Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions
+[debug] [2024-02-21T15:03:48.129Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\extensions\default-extension.png
+[debug] [2024-02-21T15:03:48.220Z] [unzip] Entry: client/assets/index.58ca09f7.css (compressed_size=37601 bytes, uncompressed_size=321252 bytes)
+[debug] [2024-02-21T15:03:48.230Z] [unzip] Processing entry: client\assets\index.58ca09f7.css
+[debug] [2024-02-21T15:03:48.232Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2024-02-21T15:03:48.265Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.58ca09f7.css
+[debug] [2024-02-21T15:03:48.295Z] [unzip] Entry: client/assets/index.c2583d42.js (compressed_size=526232 bytes, uncompressed_size=1860152 bytes)
+[debug] [2024-02-21T15:03:48.295Z] [unzip] Processing entry: client\assets\index.c2583d42.js
+[debug] [2024-02-21T15:03:48.295Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2024-02-21T15:03:48.336Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js
+[debug] [2024-02-21T15:03:48.587Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-02-21T15:03:48.587Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2024-02-21T15:03:48.587Z] [unzip] mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\
+[debug] [2024-02-21T15:03:48.601Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2024-02-21T15:03:48.602Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-02-21T15:03:48.602Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-21T15:03:48.614Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2024-02-21T15:03:48.622Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2024-02-21T15:03:48.625Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-02-21T15:03:48.625Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-21T15:03:48.626Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2024-02-21T15:03:48.637Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2024-02-21T15:03:48.638Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-02-21T15:03:48.638Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-21T15:03:48.642Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2024-02-21T15:03:48.647Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2024-02-21T15:03:48.648Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-02-21T15:03:48.648Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-21T15:03:48.734Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2024-02-21T15:03:48.741Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2024-02-21T15:03:48.742Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-02-21T15:03:48.742Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-21T15:03:48.745Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2024-02-21T15:03:48.753Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2024-02-21T15:03:48.753Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-02-21T15:03:48.753Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-21T15:03:48.758Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2024-02-21T15:03:48.887Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2024-02-21T15:03:48.887Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-02-21T15:03:48.887Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-21T15:03:48.899Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2024-02-21T15:03:48.905Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2024-02-21T15:03:48.915Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-02-21T15:03:48.931Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-21T15:03:48.932Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_github.svg
+[debug] [2024-02-21T15:03:48.938Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2024-02-21T15:03:48.947Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-02-21T15:03:48.948Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-21T15:03:48.949Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2024-02-21T15:03:48.954Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2024-02-21T15:03:48.955Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-02-21T15:03:48.959Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-21T15:03:48.960Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_google.svg
+[debug] [2024-02-21T15:03:48.965Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2024-02-21T15:03:48.966Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-02-21T15:03:48.966Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-21T15:03:48.968Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_email.svg
+[debug] [2024-02-21T15:03:49.035Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2024-02-21T15:03:49.036Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-02-21T15:03:49.037Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-21T15:03:49.131Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2024-02-21T15:03:49.185Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2024-02-21T15:03:49.185Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-02-21T15:03:49.186Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons
+[debug] [2024-02-21T15:03:49.225Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2024-02-21T15:03:49.251Z] [unzip] Entry: client/assets/index.c2583d42.js.map (compressed_size=1778557 bytes, uncompressed_size=7961927 bytes)
+[debug] [2024-02-21T15:03:49.251Z] [unzip] Processing entry: client\assets\index.c2583d42.js.map
+[debug] [2024-02-21T15:03:49.251Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets
+[debug] [2024-02-21T15:03:49.253Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\index.c2583d42.js.map
+[debug] [2024-02-21T15:03:49.979Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-02-21T15:03:49.979Z] [unzip] Processing entry: client\assets\img\
+[debug] [2024-02-21T15:03:49.979Z] [unzip] mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\
+[debug] [2024-02-21T15:03:49.981Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2024-02-21T15:03:49.981Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2024-02-21T15:03:49.981Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\img
+[debug] [2024-02-21T15:03:49.984Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\assets\img\database.png
+[debug] [2024-02-21T15:03:49.991Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=838 bytes, uncompressed_size=1504 bytes)
+[debug] [2024-02-21T15:03:49.992Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2024-02-21T15:03:49.992Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-21T15:03:49.993Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\safari-pinned-tab.svg
+[debug] [2024-02-21T15:03:49.999Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=5406 bytes, uncompressed_size=5723 bytes)
+[debug] [2024-02-21T15:03:49.999Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2024-02-21T15:03:50.000Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-21T15:03:50.001Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\mstile-150x150.png
+[debug] [2024-02-21T15:03:50.006Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2024-02-21T15:03:50.007Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2024-02-21T15:03:50.007Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-21T15:03:50.009Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\browserconfig.xml
+[debug] [2024-02-21T15:03:50.014Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2024-02-21T15:03:50.015Z] [unzip] Processing entry: client\robots.txt
+[debug] [2024-02-21T15:03:50.015Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-21T15:03:50.017Z] [unzip] Writing file: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\robots.txt
+[debug] [2024-02-21T15:03:50.023Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3064 bytes)
+[debug] [2024-02-21T15:03:50.024Z] [unzip] Processing entry: client\index.html
+[debug] [2024-02-21T15:03:50.025Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-21T15:03:50.026Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\index.html
+[debug] [2024-02-21T15:03:50.033Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=757 bytes, uncompressed_size=777 bytes)
+[debug] [2024-02-21T15:03:50.034Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2024-02-21T15:03:50.034Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-21T15:03:50.036Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\favicon-16x16.png
+[debug] [2024-02-21T15:03:50.044Z] [unzip] Entry: client/manifest.json (compressed_size=246 bytes, uncompressed_size=551 bytes)
+[debug] [2024-02-21T15:03:50.045Z] [unzip] Processing entry: client\manifest.json
+[debug] [2024-02-21T15:03:50.045Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-21T15:03:50.047Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\manifest.json
+[debug] [2024-02-21T15:03:50.051Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=1175 bytes, uncompressed_size=1175 bytes)
+[debug] [2024-02-21T15:03:50.053Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2024-02-21T15:03:50.053Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-21T15:03:50.056Z] [unzip] Writing file: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\favicon-32x32.png
+[debug] [2024-02-21T15:03:50.062Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=7602 bytes, uncompressed_size=7834 bytes)
+[debug] [2024-02-21T15:03:50.062Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2024-02-21T15:03:50.062Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client
+[debug] [2024-02-21T15:03:50.066Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\client\android-chrome-192x192.png
+[debug] [2024-02-21T15:03:50.070Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2024-02-21T15:03:50.070Z] [unzip] Processing entry: server\
+[debug] [2024-02-21T15:03:50.074Z] [unzip] mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\server\
+[debug] [2024-02-21T15:03:50.076Z] [unzip] Entry: server/server.js (compressed_size=343746 bytes, uncompressed_size=1346374 bytes)
+[debug] [2024-02-21T15:03:50.076Z] [unzip] Processing entry: server\server.js
+[debug] [2024-02-21T15:03:50.077Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2024-02-21T15:03:50.078Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\server\server.js
+[debug] [2024-02-21T15:03:50.150Z] [unzip] Entry: server/server.js.map (compressed_size=289157 bytes, uncompressed_size=1325651 bytes)
+[debug] [2024-02-21T15:03:50.151Z] [unzip] Processing entry: server\server.js.map
+[debug] [2024-02-21T15:03:50.151Z] [unzip] else mkdir: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\server
+[debug] [2024-02-21T15:03:50.153Z] [unzip] deflating: C:\Users\treas\.cache\firebase\emulators\ui-v1.11.7\server\server.js.map
+[debug] [2024-02-21T15:03:50.329Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-02-21T15:03:50.330Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-02-21T15:03:50.330Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\treas\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\treas\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-02-21T15:03:51.102Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-02-21T15:03:51.105Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\treas\amazon-clone\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\treas\\amazon-clone\\functions\" for Cloud Functions..."}}
+[debug] [2024-02-21T15:03:51.423Z] Validating nodejs source
+[debug] [2024-02-21T15:03:58.343Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-21T15:03:58.344Z] Building nodejs source
+[debug] [2024-02-21T15:03:58.347Z] Failed to find version of module node: reached end of search path C:\Users\treas\amazon-clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-02-21T15:03:58.354Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-21T15:03:58.392Z] Found firebase-functions binary at 'C:\Users\treas\amazon-clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8927
+
+[debug] [2024-02-21T15:04:02.112Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/clone-225dc/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/clone-225dc/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2024-02-21T15:13:24.070Z] [work-queue] {"queuedWork":["/clone-225dc/us-central1/api-2024-02-21T15:13:24.070Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-21T15:13:24.072Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/clone-225dc/us-central1/api-2024-02-21T15:13:24.070Z"],"workRunningCount":1}
+[debug] [2024-02-21T15:13:24.073Z] Accepted request GET /clone-225dc/us-central1/api --> us-central1-api
+[debug] [2024-02-21T15:13:24.094Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-02-21T15:13:24.095Z] [functions] Got req.url=/clone-225dc/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-225dc/us-central1/api, mapping to path=/"}}
+[debug] [2024-02-21T15:13:24.164Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2024-02-21T15:13:24.182Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2024-02-21T15:13:30.365Z] [runtime-status] [19712] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\treas\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [19712] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\treas\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-21T15:13:30.373Z] [runtime-status] [19712] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\treas\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [19712] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\treas\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-21T15:13:30.375Z] [runtime-status] [19712] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [19712] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2024-02-21T15:13:30.383Z] [runtime-status] [19712] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\treas\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [19712] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\treas\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-21T15:13:31.487Z] [runtime-status] [19712] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [19712] Checked functions.config() {\"config\":{}}"}}
+[debug] [2024-02-21T15:13:31.488Z] [runtime-status] [19712] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\treas\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [19712] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\treas\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2024-02-21T15:13:31.490Z] [runtime-status] [19712] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\treas\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [19712] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\treas\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-21T15:13:31.498Z] [runtime-status] [19712] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\treas\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [19712] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\treas\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2024-02-21T15:13:31.515Z] [runtime-status] [19712] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.7.0","resolution":"C:\\Users\\treas\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [19712] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.7.0\",\"resolution\":\"C:\\\\Users\\\\treas\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2024-02-21T15:13:31.517Z] [runtime-status] [19712] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.11.1","resolution":"C:\\Users\\treas\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [19712] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.11.1\",\"resolution\":\"C:\\\\Users\\\\treas\\\\amazon-clone\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2024-02-21T15:13:32.480Z] [runtime-status] [19712] Functions runtime initialized. {"cwd":"C:\\Users\\treas\\amazon-clone\\functions","node_version":"20.11.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [19712] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\treas\\\\amazon-clone\\\\functions\",\"node_version\":\"20.11.0\"}"}}
+[debug] [2024-02-21T15:13:32.482Z] [runtime-status] [19712] Listening to port: \\?\pipe\fire_emu_ee00e59e9728d2af {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [19712] Listening to port: \\\\?\\pipe\\fire_emu_ee00e59e9728d2af"}}
+[debug] [2024-02-21T15:13:32.540Z] [worker-us-central1-api-e7590417-debf-4ba7-81ea-59e462cab952]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-e7590417-debf-4ba7-81ea-59e462cab952]: IDLE"}}
+[debug] [2024-02-21T15:13:32.543Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2024-02-21T15:13:32.549Z] [worker-us-central1-api-e7590417-debf-4ba7-81ea-59e462cab952]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-e7590417-debf-4ba7-81ea-59e462cab952]: BUSY"}}
+[debug] [2024-02-21T15:13:32.565Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 16.1887ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 16.1887ms"}}
+[debug] [2024-02-21T15:13:32.567Z] [worker-us-central1-api-e7590417-debf-4ba7-81ea-59e462cab952]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-e7590417-debf-4ba7-81ea-59e462cab952]: IDLE"}}
+[debug] [2024-02-21T15:13:32.567Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-02-21T15:13:32.568Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-02-21T15:13:32.569Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-02-21T15:13:32.775Z] Functions emulator received unknown request at path /favicon.ico
