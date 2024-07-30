@@ -1,4 +1,5 @@
 import "./App.css";
+import React from 'react';
 import { useContext, useEffect } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { loadStripe } from "@stripe/stripe-js";

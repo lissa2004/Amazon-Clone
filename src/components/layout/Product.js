@@ -11,19 +11,17 @@ const Product = ({ id, image, title, rating, price }) => {
 
   return (
     <div className="product" key={id}>
-      <img src={image} alt="" />
+      <img src={image} alt={title} />
       <div className="product_info">
         <p>{title}</p>
       </div>
-      <div className="product_rating">
-        {Array(rating)
-        .fill()
-        .map((_, i) => (
-        <p key={i}>🌟</p>
+      <div className="product-rating">
+        {Array(rating).fill().map((_, i) => (
+          <span key={i} role="img" aria-label="star">⭐</span>
         ))}
       </div>
       <div className="product_price">
-        <p><small>$</small><strong>{price}</strong></p>
+        <span><small>$</small><strong>{price}</strong></span>
       </div>
       <div className="product_button" onClick={addToBasketHandler}>
         Add to Cart
@@ -33,3 +31,4 @@ const Product = ({ id, image, title, rating, price }) => {
 };
 
 export default Product;
+
