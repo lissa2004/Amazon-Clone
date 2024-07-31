@@ -1,6 +1,6 @@
 {
   "name": "amazon-clone",
-   "homepage": ".",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,9 +16,10 @@
     "axios": "^1.6.7",
     "chalk": "^5.3.0",
     "firebase": "^10.6.0",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-currency-format": "^1.1.0",
-    "react-dom": "^18.2.0",
+    "react-dom": "^18.3.1",
+    "react-number-format": "^5.4.0",
     "react-router-dom": "^5.3.4",
     "react-scripts": "^3.4.4",
     "web-vitals": "^2.1.4"

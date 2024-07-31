@@ -4,9 +4,6 @@ import "./Subtotal.css"
 import { useHistory} from "react-router-dom"
 import ShoppingContext from "../shopping/shoppingContext";
 
-
-
-
 const Subtotal = () => {
   const history = useHistory();
   const shoppingContext = useContext(ShoppingContext);
